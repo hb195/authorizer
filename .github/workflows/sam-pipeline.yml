@@ -23,7 +23,7 @@ jobs:
 
     - name: Package Lambda function
       run: |
-        powershell Compress-Archive -Path * -DestinationPath authorizer.zip -Exclude *.git*,*.github*,tests*
+        powershell Compress-Archive -Path * -DestinationPath authorizer.zip
 
     - name: Deploy to AWS Lambda
       env:
